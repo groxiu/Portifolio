@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-color: white;
+    --font-secondary: rgb(43, 255, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    margin: 3% 0% 5% 25%;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+.top-menu{
+    display: flex;
+    gap: 5%;
+   
+}
+.top-menu-link{
+    color: var(--font-color);
+     text-decoration: none;
+}
+.top-menu-link:hover{
+    color: var(--font-secondary);
+}
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 15% 8%;
+    align-items:center ;
+    gap: 80px;
+    flex: 1;
+}
+html{
+    height: 100%;
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    color: var(--font-color);
+}
+.principal-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+.principal-title{
+    font-size: 2.5rem;
+}
+.principal-text-line{
+    font-size: 1.25rem;
+}
+.title-strong {
+    color: var(--font-secondary);
+}
+.principal-links{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.botao{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5%;
+    width: 250px;
+    padding: 3% 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 600;
+    border: 2px solid var(--font-secondary);
+}
+.botao:hover {
+    background-color: var(--font-secondary);
+}
+.botao-image{
+    width: 20%;;
+}
+.image{
+    border-radius: 20%;
+    object-fit: cover;
+    border: solid var(--font-secondary);
+    width: 40%;
+   
+}
+.rodape{
+    background-color: var(--font-secondary);
+    padding: 0.5%  ;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .top{
+        margin: 10% 0% 10% 0%;
+    }
+    .top-menu{
+        justify-content: center;
+    }
+    .principal{
+        flex-direction: column-reverse;
+        margin: 0% 0% 5% 0%;
+        gap: 50px;
+    }
+    .principal-text{
+        width: auto;
+    }
+}
